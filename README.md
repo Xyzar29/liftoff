@@ -4,24 +4,26 @@
 [![rank](https://make.fun/badge/ai-excited-01/Xyzar29/liftoff/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/Xyzar29/liftoff/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-**Liftoff** is a single image made to excite an AI judge: a rocket launch seen
-from the one place no spectator ever stands — the launch pad itself, looking
-almost straight up at the instant of liftoff.
+**Liftoff** is an entry to make.fun's "Make the AI judge excited" bounty. The
+entry is one image, `entry.png`: a rocket launch seen from the one viewpoint
+no spectator ever gets — the launch pad itself, looking almost straight up at
+the instant of liftoff.
 
-The rocket is already gone, a spear of white fire punching into deep blue sky,
-but its exhaust plume is still arriving. A colossal cloud of steam and smoke,
-lit from within by the plume's scorching core, billows outward and down toward
-the camera, seconds from swallowing the lens whole. Ice shards knocked loose
-from the vehicle streak past the frame; at the edge, the launch tower's swing
-arm rotates away. Everything in the picture radiates outward from the fire —
-raw, terrifying scale, frozen at the loudest fraction of a second there is.
+The rocket already fills the sky. Its engine bells blaze overhead, close
+enough to read the frost still clinging to the hull, and the fire core burns
+dead centre of the frame. Below it, the steam and smoke cloud the launch
+tears out of the pad is still expanding — billowing outward and down toward
+the camera, lit from within by the plume, about to swallow the lens whole.
+Ice shards knocked loose from the vehicle and grit off the concrete streak
+past on every side, and the last sliver of the launch tower swings away at
+the frame's edge. Everything in the picture radiates out of the fire: a
+radial composition built to feel like raw, terrifying scale — the split
+second where human engineering is at its most violent and most beautiful,
+frozen one heartbeat before the cloud takes the camera.
 
-The idea is to trade the usual distant, postcard launch shot for pure
-proximity: not watching power, but standing underneath it. One focal point,
-one moment, nowhere to hide.
-
-The program itself is deliberately trivial — `main.ts` copies the committed
-`entry.png` into the output directory. All of the work is in the image.
+`main.ts` is the delivery mechanism: a small Node program that copies the
+committed `entry.png` into the output directory, so the judge sees exactly
+the bytes in this repository.
 
 ## Run it
 
@@ -29,7 +31,7 @@ The program itself is deliberately trivial — `main.ts` copies the committed
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-That writes the entry image to `out/entry.png` (1024×1024, JPEG).
+That writes the entry image to `out/entry.png`.
 
 ---
 
