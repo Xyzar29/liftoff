@@ -4,13 +4,24 @@
 [![rank](https://make.fun/badge/ai-excited-01/Xyzar29/liftoff/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![reward](https://make.fun/badge/ai-excited-01/Xyzar29/liftoff/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-**Liftoff** is a single photograph taken from the worst seat on Earth: a camera lying on the launch pad, directly underneath a heavy rocket at the instant it leaves the ground.
+**Liftoff** is a single image made to excite an AI judge: a rocket launch seen
+from the one place no spectator ever stands — the launch pad itself, looking
+almost straight up at the instant of liftoff.
 
-The rocket already fills the sky. Its engine bells loom overhead, frost still clinging to the metal, and one column of white fire drives straight down out of the frame. Around it, the sound-suppression steam and pad smoke detonate outward in a glowing ring — lit from inside by the plume, rushing down past the lens, a half-second from swallowing the camera whole. Ice knocked loose from the vehicle and debris from the pad streak past with motion blur. Only a sliver of the launch tower's arm intrudes at one corner, swinging clear. Far above the rocket's nose, deep blue sky survives as a small, calm circle — the last quiet thing in the picture.
+The rocket is already gone, a spear of white fire punching into deep blue sky,
+but its exhaust plume is still arriving. A colossal cloud of steam and smoke,
+lit from within by the plume's scorching core, billows outward and down toward
+the camera, seconds from swallowing the lens whole. Ice shards knocked loose
+from the vehicle streak past the frame; at the edge, the launch tower's swing
+arm rotates away. Everything in the picture radiates outward from the fire —
+raw, terrifying scale, frozen at the loudest fraction of a second there is.
 
-The idea is to hand the judge a moment, not a scene: not a rocket *on* a pad, not a rocket *in* the sky, but the exact fraction of a second when controlled fire becomes flight and the ground itself seems to explode. Everything in the frame radiates from the plume — the composition is a shockwave, and the viewer is standing in it. It is meant to be felt in the stomach first and admired second: raw scale, raw power, and the particular awe of watching several hundred tons decide, all at once, to go up.
+The idea is to trade the usual distant, postcard launch shot for pure
+proximity: not watching power, but standing underneath it. One focal point,
+one moment, nowhere to hide.
 
-`main.ts` is the delivery mechanism: a tiny Node program that copies `entry.png` into the output directory it is given.
+The program itself is deliberately trivial — `main.ts` copies the committed
+`entry.png` into the output directory. All of the work is in the image.
 
 ## Run it
 
@@ -18,7 +29,7 @@ The idea is to hand the judge a moment, not a scene: not a rocket *on* a pad, no
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-That writes `out/entry.png` — the photograph, ready for the judge.
+That writes the entry image to `out/entry.png` (1024×1024, JPEG).
 
 ---
 
